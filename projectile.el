@@ -2108,6 +2108,7 @@ a COMPILE-CMD, a TEST-CMD, and a RUN-CMD."
 (projectile-register-project-type 'go projectile-go-function "go build ./..." "go test ./...")
 (projectile-register-project-type 'racket '("info.rkt") nil "raco test .")
 (projectile-register-project-type 'elixir '("mix.exs") "mix compile" "mix test")
+(projectile-register-project-type 'ember-cli '("ember-cli-build.js") "ember build" "ember test" "ember server")
 
 (defvar-local projectile-project-type nil
   "Buffer local var for overriding the auto-detected project type.
